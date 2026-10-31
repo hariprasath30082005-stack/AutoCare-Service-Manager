@@ -1,0 +1,261 @@
+
+/* App11.css - Library Integration Styles */
+
+/* Lucide icons */
+.bakery11 button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bakery11-logo {
+  justify-content: flex-start !important;
+}
+
+.bakery11-logo svg {
+  color: #b86b45;
+  flex-shrink: 0;
+}
+
+.bakery11-navlinks button {
+  display: inline-flex;
+}
+
+.bakery11-cart-button svg,
+.bakery11-menu-button svg {
+  flex-shrink: 0;
+}
+
+/* Feature icons */
+.bakery11-features-grid > div > svg {
+  width: 36px;
+  height: 36px;
+  padding: 7px;
+  color: #a65c3d;
+  background: #fff0e4;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Search */
+.bakery11-search svg {
+  color: #a58d7d;
+  flex-shrink: 0;
+}
+
+.bakery11-search input {
+  flex: 1;
+}
+
+/* Product buttons */
+.bakery11-product-bottom button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Banner */
+.bakery11-banner .bakery11-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bakery11-banner .bakery11-container > svg {
+  color: #ffe1cb;
+}
+
+.bakery11-banner button svg {
+  width: 18px;
+}
+
+/* Contact */
+.bakery11-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bakery11-contact svg {
+  flex-shrink: 0;
+  color: #e8b394;
+}
+
+/* Cart quantity */
+.bakery11-quantity button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bakery11-delete {
+  align-self: flex-start;
+  padding: 7px;
+}
+
+.bakery11-delete:hover {
+  color: #a83c35;
+}
+
+/* Empty cart */
+.bakery11-empty-cart > svg {
+  color: #bd8a6b;
+  margin-bottom: 14px;
+}
+
+/* React DatePicker */
+.bakery11-date-wrapper {
+  width: 100%;
+  display: block;
+}
+
+.bakery11-date-wrapper .react-datepicker__input-container {
+  width: 100%;
+  display: block;
+}
+
+.bakery11-date-input {
+  width: 100%;
+  background: white;
+  border: 1px solid #e7d9cd;
+  border-radius: 9px;
+  padding: 13px;
+  color: #39281e;
+  outline: none;
+}
+
+.bakery11-date-input:focus {
+  border-color: #a65c3d;
+  box-shadow: 0 0 0 3px #a65c3d18;
+}
+
+.react-datepicker {
+  font-family: "DM Sans", Arial, sans-serif;
+  border: 1px solid #e9d7c8;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px #39281e20;
+}
+
+.react-datepicker__header {
+  background: #fff0e4;
+  border-bottom: 1px solid #e9d7c8;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background: #a65c3d !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.react-datepicker__day:hover {
+  border-radius: 8px;
+}
+
+/* React Hook Form + Zod validation */
+.bakery11-error {
+  color: #d43d3d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.bakery11-checkout-form input:focus,
+.bakery11-checkout-form textarea:focus {
+  border-color: #a65c3d;
+  box-shadow: 0 0 0 3px #a65c3d14;
+}
+
+/* Checkout button */
+.bakery11-checkout-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.bakery11-checkout-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.bakery11-checkout-note svg {
+  flex-shrink: 0;
+  color: #4d9468;
+}
+
+/* React Toastify */
+.Toastify__toast-container {
+  z-index: 9999;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.Toastify__toast {
+  border-radius: 12px;
+  box-shadow: 0 12px 30px #00000018;
+}
+
+.Toastify__toast--success {
+  color: #206c4b;
+}
+
+.Toastify__toast--error {
+  color: #ad3939;
+}
+
+.Toastify__progress-bar--success {
+  background: #2c9d68;
+}
+
+.Toastify__progress-bar--error {
+  background: #df5555;
+}
+
+/* Responsive fixes */
+@media (max-width: 800px) {
+  .bakery11-navlinks {
+    align-items: stretch;
+  }
+
+  .bakery11-navlinks button {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .bakery11-features-grid > div > svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .bakery11-logo {
+    font-size: 17px;
+  }
+
+  .bakery11-logo svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .bakery11-hero-actions button {
+    width: 100%;
+  }
+
+  .bakery11-checkout-form {
+    padding: 18px;
+  }
+
+  .bakery11-checkout-note {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .Toastify__toast-container {
+    width: calc(100% - 24px);
+    left: 12px;
+    right: 12px;
+  }
+}
